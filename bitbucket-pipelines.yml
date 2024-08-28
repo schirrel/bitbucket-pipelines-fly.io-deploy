@@ -2,7 +2,7 @@ image: golang:1.15
 pipelines:
   default:
     - step:
-        name: Test and Build
+        name: Deploy to Fly.io
         deployment: production
         script:
           - apt-get update -qq && apt-get install -y curl
